@@ -18,7 +18,8 @@ services:
       NODE_ENV: production
     ports:
       - 3000:3000
-      - 35729:35729
+      - app/views/todos.ejs
+    # Uncomment the following lines to enable live code reloading during development
     develop:
       watch:
         - path: ./app/package.json
